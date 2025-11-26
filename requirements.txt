@@ -1,0 +1,13 @@
+python-dotenv
+sentence_transformers
+langchain_community
+langchain
+langchain-openai
+pypdf
+langchain-text-splitters
+transformers
+groq 
+faiss-cpu
+futures
+tqdm
+google.generativeai
