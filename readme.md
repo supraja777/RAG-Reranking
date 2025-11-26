@@ -22,7 +22,7 @@ This pipeline is ideal for **climate research, academic literature analysis, ent
 
 ---
 
-🛠 Technology Stack
+## 🛠 Technology Stack
 Python 3.10+ – Modern, efficient development environment.
 
 LangChain – Orchestrates document processing and LLM interactions.
@@ -43,8 +43,8 @@ cd RAG-Reranking
 pip install -r requirements.txt
 ```
 ---
+## 🚀 Usage
 
-🚀 Usage
 Add your PDF documents to the data/ folder.
 
 Update the path variable in app.py to your target document.
@@ -64,7 +64,9 @@ initial_docs = vectorstore.similarity_search(query, k=15)
 reranked_documents = rerank_documents(query, initial_docs)
 ```
 --- 
-STEPS -
+
+## 🚀 STEPS
+
 
 Step 1: FAISS retrieves top relevant documents based on vector similarity.
 
