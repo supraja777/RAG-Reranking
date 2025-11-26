@@ -22,43 +22,6 @@ This pipeline is ideal for **climate research, academic literature analysis, ent
 
 ---
 
-## 🛠 Installation
-
-```bash
-git clone https://github.com/yourusername/RAG-Reranking.git
-cd RAG-Reranking
-pip install -r requirements.txt
-```
-
-🚀 Usage
-Add your PDF documents to the data/ folder.
-
-Update the path variable in app.py to your target document.
-
-Run the main script:
-
-```bash
-Copy code
-python app.py
-```
-
-Input a query to retrieve and rerank relevant documents.
-
-🔍 Example
-```bash
-python
-Copy code
-query = "What are the impacts of climate change on biodiversity?"
-initial_docs = vectorstore.similarity_search(query, k=15)
-reranked_documents = rerank_documents(query, initial_docs)
-```
-
-Step 1: FAISS retrieves top relevant documents based on vector similarity.
-
-Step 2: The LLM reranks documents based on contextual relevance and intent.
-
-Result: Highly accurate, top-N documents most relevant to your query.
-
 🛠 Technology Stack
 Python 3.10+ – Modern, efficient development environment.
 
@@ -69,4 +32,46 @@ FAISS – High-speed vector search and indexing.
 HuggingFace Sentence Transformers – Semantic embeddings for high-quality retrieval.
 
 ChatGroq LLM – Structured LLM scoring for reranking.
+
+---
+
+## 🛠 Installation
+
+```bash
+git clone https://github.com/yourusername/RAG-Reranking.git
+cd RAG-Reranking
+pip install -r requirements.txt
+```
+---
+
+🚀 Usage
+Add your PDF documents to the data/ folder.
+
+Update the path variable in app.py to your target document.
+
+Run the main script:
+
+```bash
+python app.py
+```
+
+Input a query to retrieve and rerank relevant documents.
+
+🔍 Example
+```bash
+query = "What are the impacts of climate change on biodiversity?"
+initial_docs = vectorstore.similarity_search(query, k=15)
+reranked_documents = rerank_documents(query, initial_docs)
+```
+--- 
+STEPS -
+
+Step 1: FAISS retrieves top relevant documents based on vector similarity.
+
+Step 2: The LLM reranks documents based on contextual relevance and intent.
+
+Result: Highly accurate, top-N documents most relevant to your query.
+
+---
+
 
