@@ -23,15 +23,15 @@ This pipeline is ideal for **climate research, academic literature analysis, ent
 ---
 
 ## 🛠 Technology Stack
-Python 3.10+ – Modern, efficient development environment.
+- ** Python 3.10+ – Modern, efficient development environment.
 
-LangChain – Orchestrates document processing and LLM interactions.
+- ** LangChain – Orchestrates document processing and LLM interactions.
 
-FAISS – High-speed vector search and indexing.
+- ** FAISS – High-speed vector search and indexing.
 
-HuggingFace Sentence Transformers – Semantic embeddings for high-quality retrieval.
+- ** HuggingFace Sentence Transformers – Semantic embeddings for high-quality retrieval.
 
-ChatGroq LLM – Structured LLM scoring for reranking.
+- ** ChatGroq LLM – Structured LLM scoring for reranking.
 
 ---
 
