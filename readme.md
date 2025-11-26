@@ -28,7 +28,7 @@ This pipeline is ideal for **climate research, academic literature analysis, ent
 git clone https://github.com/yourusername/RAG-Reranking.git
 cd RAG-Reranking
 pip install -r requirements.txt
-Ensure Python 3.10+ is installed for compatibility.
+```
 
 🚀 Usage
 Add your PDF documents to the data/ folder.
@@ -37,17 +37,22 @@ Update the path variable in app.py to your target document.
 
 Run the main script:
 
-bash
+```bash
 Copy code
 python app.py
+```
+
 Input a query to retrieve and rerank relevant documents.
 
 🔍 Example
+```bash
 python
 Copy code
 query = "What are the impacts of climate change on biodiversity?"
 initial_docs = vectorstore.similarity_search(query, k=15)
 reranked_documents = rerank_documents(query, initial_docs)
+```
+
 Step 1: FAISS retrieves top relevant documents based on vector similarity.
 
 Step 2: The LLM reranks documents based on contextual relevance and intent.
